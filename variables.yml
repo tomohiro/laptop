@@ -1,2 +1,7 @@
 homebrew_package_names:
   - ssh-copy-id
+  - rbenv
+  - ruby-build
+  - rbenv-vars
+  - rbenv-default-gems
+  - rbenv-gem-rehash
