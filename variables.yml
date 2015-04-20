@@ -1,6 +1,6 @@
 homebrew_package_names:
   # Libraries
-  - brew-cask
+  - caskroom/cask/brew-cask
   - readline
   - libxml2
   - libxslt
@@ -53,4 +53,12 @@ homebrew_package_names:
   - go
 
 homebrew_cask_package_names:
+  - dropbox
+  - firefox
+  - limechat
+  - iterm2
   - atom
+  - java
+  - virtualbox
+  - postgres
+  - anvil
