@@ -3,16 +3,10 @@ resources:
   - type: command
     script: brew update
 
-  # Homebrew Cask packages
-  <%- homebrew_cask_package_names.each do |homebrew_cask_package_name| -%>
-  - type: homebrew_cask_package
-    name: <%= homebrew_cask_package_name %>
-  <%- end -%>
-
   # Homebrew packages
-  <%- homebrew_package_names.each do |homebrew_package_name| -%>
+  <%- homebrew_package_names.each do |package_name| -%>
   - type: homebrew_package
-    name: <%= homebrew_package_name %>
+    name: <%= package_name %>
   <%- end -%>
 
   # Rbenv
@@ -23,4 +17,4 @@ resources:
   # After
   - type: command
     check_script: "finger -l | grep -E 'Shell: /bin/zsh$'"
-    script: sudo chsh -s /bin/zsh <%= ENV["USER"] %>
+    script: sudo chsh -s /bin/zsh <%= ENV['USER'] %>
