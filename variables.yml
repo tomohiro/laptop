@@ -2,4 +2,5 @@ homebrew_cask_package_names:
   - slate
 
 homebrew_package_names:
+  - caskroom/cask/brew-cask
   - ssh-copy-id
