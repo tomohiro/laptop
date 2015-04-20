@@ -1,0 +1,26 @@
+resources:
+  # Prepare
+  - type: command
+    script: brew update
+
+  # Homebrew Cask packages
+  <%- homebrew_cask_package_names.each do |homebrew_cask_package_name| -%>
+  - type: homebrew_cask_package
+    name: <%= homebrew_cask_package_name %>
+  <%- end -%>
+
+  # Homebrew packages
+  <%- homebrew_package_names.each do |homebrew_package_name| -%>
+  - type: homebrew_package
+    name: <%= homebrew_package_name %>
+  <%- end -%>
+
+  # Rbenv
+  - type: rbenv_ruby
+    version: 2.2.2
+    global: true
+
+  # After
+  - type: command
+    check_script: "finger -l | grep -E 'Shell: /bin/zsh$'"
+    script: sudo chsh -s /bin/zsh <%= ENV["USER"] %>
