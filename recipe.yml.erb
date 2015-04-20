@@ -2,10 +2,20 @@ resources:
   # Prepare
   - type: command
     script: brew update
+  - type: command
+    script: brew upgrade
+  - type: command
+    script: brew cleanup
 
   # Homebrew packages
   <%- homebrew_package_names.each do |package_name| -%>
   - type: homebrew_package
+    name: <%= package_name %>
+  <%- end -%>
+
+  # Homebrew Cask packages
+  <%- homebrew_cask_package_names.each do |package_name| -%>
+  - type: homebrew_cask_package
     name: <%= package_name %>
   <%- end -%>
 

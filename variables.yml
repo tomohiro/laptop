@@ -1,7 +1,56 @@
 homebrew_package_names:
-  - ssh-copy-id
+  # Libraries
+  - brew-cask
+  - readline
+  - libxml2
+  - libxslt
+
+  # Tools
+  -  zsh
+  -  zsh-completions
+  -  vim
+  -  tmux
+  -  wget
+  -  tree
+  -  fortune
+  -  lv
+  -  unrar
+  -  p7zip
+  -  ssh-copy-id
+  -  keychain
+  -  mercurial
+  -  git
+  -  hub
+  -  gitsh
+  -  tig
+  -  the_silver_searcher
+  -  jq
+  -  markdown
+  -  heroku-toolbelt
+  -  ifstat
+  -  osxutils
+  -  boot2docker
+  -  fig
+  -  youtube-dl
+  -  ffmpeg
+  -  peco
+  -  colordiff
+  -  direnv
+  -  pandoc
+
+  # Ruby
   - rbenv
   - ruby-build
   - rbenv-vars
   - rbenv-default-gems
   - rbenv-gem-rehash
+  - rbenv-readline
+
+  # Node
+  - node
+
+  # Go
+  - go
+
+homebrew_cask_package_names:
+  - atom
