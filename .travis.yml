@@ -1,0 +1,7 @@
+language: objective-c
+
+os:
+  - osx
+
+script:
+  - bundle exec serverkit apply recipe.yml.erb --variables=variables.yml --log-level=DEBUG
