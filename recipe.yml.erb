@@ -7,16 +7,22 @@ resources:
   - type: command
     script: brew cleanup
 
+  # Homebrew Taps
+  <%- homebrew_taps.each do |tap| -%>
+  - type: homebrew_tap
+    name: <%= tap %>
+  <%- end -%>
+
   # Homebrew packages
-  <%- homebrew_package_names.each do |package_name| -%>
+  <%- homebrew_packages.each do |package| -%>
   - type: homebrew_package
-    name: <%= package_name %>
+    name: <%= package %>
   <%- end -%>
 
   # Homebrew Cask packages
-  <%- homebrew_cask_package_names.each do |package_name| -%>
+  <%- homebrew_cask_packages.each do |package| -%>
   - type: homebrew_cask_package
-    name: <%= package_name %>
+    name: <%= package %>
   <%- end -%>
 
   # Rbenv

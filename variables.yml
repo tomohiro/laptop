@@ -1,6 +1,12 @@
-homebrew_package_names:
+homebrew_taps:
+  - homebrew/versions
+  - homebrew/dupes
+  - toughtbot/formulae
+  - caskroom/homebrew-cask
+
+homebrew_packages:
   # Libraries
-  - caskroom/cask/brew-cask
+  - brew-cask
   - readline
   - libxml2
   - libxslt
@@ -52,7 +58,7 @@ homebrew_package_names:
   # Go
   - go
 
-homebrew_cask_package_names:
+homebrew_cask_packages:
   - dropbox
   - firefox
   - limechat
