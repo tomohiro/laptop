@@ -68,3 +68,13 @@ homebrew_cask_packages:
   - virtualbox
   - postgres
   - anvil
+  - bowtie
+  - skype
+  - vlc
+  - intellij-idea-ce
+  - simple-comic
+  - vagrant
+  - vagrant-manager
+  - github
+  - githubpluse
+  - flashlight
