@@ -76,6 +76,6 @@ homebrew_cask_packages:
   - vagrant
   - vagrant-manager
   - github
-  - githubpluse
+  - githubpulse
   - gitter
   - flashlight
