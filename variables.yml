@@ -77,4 +77,5 @@ homebrew_cask_packages:
   - vagrant-manager
   - github
   - githubpluse
+  - gitter
   - flashlight
