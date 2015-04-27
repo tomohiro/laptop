@@ -59,23 +59,24 @@ homebrew_packages:
   - go
 
 homebrew_cask_packages:
+  - java
   - dropbox
   - firefox
   - limechat
+  - skype
+  - gitter
+  - github
+  - githubpulse
   - iterm2
-  - atom
-  - java
   - virtualbox
+  - vagrant
+  - vagrant-manager
   - postgres
   - anvil
   - bowtie
-  - skype
-  - vlc
   - intellij-idea-ce
+  - atom
+  - vlc
   - simple-comic
-  - vagrant
-  - vagrant-manager
-  - github
-  - githubpulse
-  - gitter
+  - kindle
   - flashlight
