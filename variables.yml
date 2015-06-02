@@ -53,11 +53,10 @@ homebrew_packages:
   - rbenv-gem-rehash
   - rbenv-readline
 
-  # Node
+  # Languages
   - node
-
-  # Go
   - go
+  - python
 
 homebrew_cask_packages:
   - java
