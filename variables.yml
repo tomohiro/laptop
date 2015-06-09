@@ -44,6 +44,7 @@ homebrew_packages:
   - thefuck
   - docker
   - terraform
+  - pwgen
 
   # Ruby
   - rbenv
