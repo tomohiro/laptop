@@ -45,6 +45,7 @@ homebrew_packages:
   - docker
   - terraform
   - pwgen
+  - awscli
 
   # Ruby
   - rbenv
