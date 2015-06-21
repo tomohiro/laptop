@@ -1,0 +1,5 @@
+homebrew_taps:
+  - homebrew/versions
+  - homebrew/dupes
+  - thoughtbot/formulae
+  - caskroom/cask

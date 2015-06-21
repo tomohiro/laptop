@@ -1,0 +1,20 @@
+homebrew_cask_packages:
+  - java
+  - dropbox
+  - firefox
+  - limechat
+  - skype
+  - gitter
+  - github
+  - githubpulse
+  - iterm2
+  - virtualbox
+  - vagrant
+  - vagrant-manager
+  - postgres
+  - anvil
+  - intellij-idea-ce
+  - atom
+  - vlc
+  - kindle
+  - flashlight

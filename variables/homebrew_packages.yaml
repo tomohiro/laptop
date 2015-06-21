@@ -1,9 +1,3 @@
-homebrew_taps:
-  - homebrew/versions
-  - homebrew/dupes
-  - thoughtbot/formulae
-  - caskroom/cask
-
 homebrew_packages:
   # Libraries
   - brew-cask
@@ -59,24 +53,3 @@ homebrew_packages:
   - node
   - go
   - python
-
-homebrew_cask_packages:
-  - java
-  - dropbox
-  - firefox
-  - limechat
-  - skype
-  - gitter
-  - github
-  - githubpulse
-  - iterm2
-  - virtualbox
-  - vagrant
-  - vagrant-manager
-  - postgres
-  - anvil
-  - intellij-idea-ce
-  - atom
-  - vlc
-  - kindle
-  - flashlight
