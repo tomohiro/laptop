@@ -31,8 +31,3 @@ resources:
   - type: rbenv_ruby
     version: 2.2.2
     global: true
-
-  # After
-  - type: command
-    check_script: "finger -l | grep -E 'Shell: /bin/zsh$'"
-    script: sudo chsh -s /bin/zsh <%= ENV['USER'] %>
