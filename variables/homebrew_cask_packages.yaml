@@ -18,3 +18,4 @@ homebrew_cask_packages:
   - vlc
   - kindle
   - flashlight
+  - font-fontawesome

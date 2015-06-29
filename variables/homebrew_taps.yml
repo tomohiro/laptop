@@ -3,3 +3,4 @@ homebrew_taps:
   - homebrew/dupes
   - thoughtbot/formulae
   - caskroom/cask
+  - caskroom/fonts
