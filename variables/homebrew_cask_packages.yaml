@@ -11,6 +11,8 @@ homebrew_cask_packages:
   - virtualbox
   - vagrant
   - vagrant-manager
+  - packer
+  - terraform
   - postgres
   - anvil
   - intellij-idea-ce

@@ -37,7 +37,6 @@ homebrew_packages:
   - pandoc
   - thefuck
   - docker
-  - terraform
   - pwgen
   - awscli
   - xhyve
