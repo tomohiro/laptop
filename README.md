@@ -19,5 +19,5 @@ $ bundle install --path vendor/bundle
 Apply the recipe:
 
 ```sh
-$ bundle exec serverkit apply recipe.yml.erb --variables=variables
+$ bin/install.sh
 ```
