@@ -4,4 +4,4 @@ os:
   - osx
 
 script:
-  - bundle exec serverkit apply recipe.yml.erb --variables=variables --log-level=DEBUG
+  - bundle exec serverkit validate recipe.yml.erb --variables=variables
