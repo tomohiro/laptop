@@ -21,3 +21,4 @@ homebrew_cask_packages:
   - kindle
   - flashlight
   - font-fontawesome
+  - kitematic
