@@ -31,3 +31,9 @@ resources:
   - type: rbenv_ruby
     version: 2.2.2
     global: true
+
+  # Atom packages
+  <%- atom_packages.each do |package| -%>
+  - type: atom_package
+    name: <%= package %>
+  <%- end -%>
