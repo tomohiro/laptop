@@ -1,5 +1,7 @@
 #!/bin/sh
 
+bundle install --path vendor/bundle
+
 bundle exec serverkit apply recipe.yml.erb \
   --variables=variables \
   --log-level=DEBUG
