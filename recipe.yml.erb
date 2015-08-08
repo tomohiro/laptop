@@ -1,13 +1,15 @@
+# vim: ft=yaml
+
 resources:
-  # Prepare
+  - type: user
+    name: tomohiro
+    shell: /usr/local/bin/zsh
+
+  # Prepare install packages
   - type: command
     script: brew update
   - type: command
     script: brew upgrade
-  - type: command
-    script: brew cleanup
-  - type: command
-    script: brew cask cleanup
 
   # Homebrew Taps
   <%- homebrew_taps.each do |tap| -%>
@@ -37,3 +39,9 @@ resources:
   - type: atom_package
     name: <%= package %>
   <%- end -%>
+
+  # Cleanup packages
+  - type: command
+    script: brew cleanup
+  - type: command
+    script: brew cask cleanup
