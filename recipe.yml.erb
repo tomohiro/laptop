@@ -10,6 +10,8 @@ resources:
     script: brew update
   - type: command
     script: brew upgrade
+  - type: command
+    script: apm upgrade --compatible --no-confirm
 
   # Homebrew Taps
   <%- homebrew_taps.each do |tap| -%>
@@ -45,3 +47,6 @@ resources:
     script: brew cleanup
   - type: command
     script: brew cask cleanup
+  - type: command
+    script: apm clean
+    script: apm upgrade --compatible --no-confirm
