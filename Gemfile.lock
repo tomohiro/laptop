@@ -31,7 +31,7 @@ GEM
     net-ssh (2.9.2)
     net-telnet (0.1.1)
     rainbow (2.0.0)
-    serverkit (0.6.4)
+    serverkit (0.6.5)
       activemodel
       activesupport
       bundler
@@ -39,7 +39,7 @@ GEM
       highline
       rainbow
       slop (~> 3.4)
-      specinfra (>= 2.29.0)
+      specinfra (>= 2.31.0)
       unix-crypt
     serverkit-atom (0.0.1)
       serverkit
