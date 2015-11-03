@@ -20,3 +20,5 @@ homebrew_cask_packages:
   - kindle
   - flashlight
   - font-fontawesome
+  - mancy
+  - gitify
