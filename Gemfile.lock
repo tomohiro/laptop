@@ -1,13 +1,3 @@
-GIT
-  remote: https://github.com/Tomohiro/specinfra
-  revision: 658fa5d58ce07594b1592cf593faf068e6d00e47
-  specs:
-    specinfra (2.40.0)
-      net-scp
-      net-ssh (~> 2.7)
-      net-telnet
-      sfl
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -50,6 +40,11 @@ GEM
       specinfra (>= 2.31.1)
     sfl (2.2)
     slop (3.6.0)
+    specinfra (2.44.1)
+      net-scp
+      net-ssh (~> 2.7)
+      net-telnet
+      sfl
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
@@ -63,7 +58,6 @@ DEPENDENCIES
   serverkit-atom
   serverkit-homebrew
   serverkit-rbenv
-  specinfra!
 
 BUNDLED WITH
-   1.10.5
+   1.10.6
