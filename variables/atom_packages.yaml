@@ -11,7 +11,6 @@ atom_packages:
   - file-types
   - go-plus
   - go-to-line
-  - japanese-wrap
   - jumpy
   - language-csharp
   - language-haml
