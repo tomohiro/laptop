@@ -21,6 +21,13 @@ resources:
     name: <%= package %>
   <%- end -%>
 
+  <%- homebrew_packages_with_options.each do |package| -%>
+  - type: homebrew_package
+    name: <%= package['name'] %>
+    options: <%= package['options'] %>
+  <%- end -%>
+
+
   # Homebrew Cask packages
   <%- homebrew_cask_packages.each do |package| -%>
   - type: homebrew_cask_package

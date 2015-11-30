@@ -53,3 +53,7 @@ homebrew_packages:
   - node
   - go
   - python
+
+homebrew_packages_with_options:
+  - name: rust
+    options: '--HEAD'
