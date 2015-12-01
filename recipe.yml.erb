@@ -45,6 +45,12 @@ resources:
     name: <%= package %>
   <%- end -%>
 
+  # Go packages
+  <%- go_packages.each do |path| -%>
+  - type: go_package
+    path: <%= path %>
+  <%- end -%>
+
   # Cleanup packages
   - type: command
     script: brew cleanup
