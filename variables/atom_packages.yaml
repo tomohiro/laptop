@@ -26,4 +26,4 @@ atom_packages:
   - serverspec-snippets
   - symbols-tree-view
   - travis-ci-status
-  - vim-mode
+  - vim-mode-plus
