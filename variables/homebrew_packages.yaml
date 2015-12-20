@@ -41,6 +41,7 @@ homebrew_packages:
   - awscli
   - xhyve
   - git-lfs
+  - ansible
 
   # Ruby
   - rbenv
