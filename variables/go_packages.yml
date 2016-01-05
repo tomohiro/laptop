@@ -7,3 +7,4 @@ go_packages:
   - github.com/motemen/ghq
   - github.com/motemen/gompatible/cmd/gompat
   - github.com/martingallagher/gawp
+  - github.com/rjeczalik/bin/cmd/gobin
