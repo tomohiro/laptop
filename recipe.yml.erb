@@ -27,7 +27,6 @@ resources:
     options: <%= package['options'] %>
   <%- end -%>
 
-
   # Homebrew Cask packages
   <%- homebrew_cask_packages.each do |package| -%>
   - type: homebrew_cask_package
@@ -36,14 +35,22 @@ resources:
 
   # Rbenv
   - type: rbenv_ruby
-    version: 2.2.3
+    version: 2.3.0
     global: true
+
+  # RubyGems
+  - type: command
+    script: gem update
+  - type: command
+    script: gem install bundler pit mechanize
 
   # Atom packages
   <%- atom_packages.each do |package| -%>
   - type: atom_package
     name: <%= package %>
   <%- end -%>
+  - type: command
+    script: apm upgrade --compatible --no-confirm
 
   # Go packages
   <%- go_packages.each do |path| -%>
@@ -58,4 +65,5 @@ resources:
     script: brew cask cleanup
   - type: command
     script: apm clean
-    script: apm upgrade --compatible --no-confirm
+  - type: command
+    script: gem cleanup
