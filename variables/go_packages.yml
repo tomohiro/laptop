@@ -9,4 +9,5 @@ go_packages:
   - github.com/martingallagher/gawp
   - github.com/rjeczalik/bin/cmd/gobin
   - github.com/apex/apex/cmd/apex
+  - github.com/yields/phony
 
