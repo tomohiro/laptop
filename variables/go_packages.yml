@@ -8,3 +8,5 @@ go_packages:
   - github.com/motemen/gompatible/cmd/gompat
   - github.com/martingallagher/gawp
   - github.com/rjeczalik/bin/cmd/gobin
+  - github.com/apex/apex/cmd/apex
+
