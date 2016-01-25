@@ -52,8 +52,11 @@ homebrew_packages:
   - rbenv-gem-rehash
   - rbenv-readline
 
+  # Node.js
+  - nodenv
+  - node-build
+
   # Languages
-  - node
   - go
   - python
 
