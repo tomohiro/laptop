@@ -19,3 +19,5 @@ homebrew_cask_packages:
   - font-fontawesome
   - aerial
   - silverlight
+  - docker
+  - docker-compose

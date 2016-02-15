@@ -36,7 +36,6 @@ homebrew_packages:
   - direnv
   - pandoc
   - thefuck
-  - docker
   - pwgen
   - awscli
   - xhyve
