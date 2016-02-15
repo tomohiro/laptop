@@ -2,6 +2,7 @@ homebrew_cask_packages:
   - java
   - dropbox
   - firefox
+  - google-chrome
   - limechat
   - skype
   - githubpulse
