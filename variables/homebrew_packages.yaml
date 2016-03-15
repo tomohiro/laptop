@@ -44,6 +44,8 @@ homebrew_packages:
   - e2fsprogs
   - gpg
   - nginx
+  - maven
+  - jenkins
 
   # Ruby
   - rbenv
