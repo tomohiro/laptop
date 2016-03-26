@@ -8,7 +8,6 @@ homebrew_packages:
   # Tools
   - zsh
   - zsh-completions
-  - vim
   - tmux
   - wget
   - tree
@@ -68,3 +67,5 @@ homebrew_packages:
 homebrew_packages_with_options:
   - name: rust
     options: '--HEAD'
+  - name: vim
+    options: '--with-lua --with-python3'
