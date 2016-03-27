@@ -63,9 +63,8 @@ homebrew_packages:
 
   # Languages
   - go
+  - rust
 
 homebrew_packages_with_options:
-  - name: rust
-    options: '--HEAD'
   - name: vim
     options: '--with-lua --with-python3'
