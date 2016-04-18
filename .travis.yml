@@ -5,3 +5,6 @@ os:
 
 script:
   - bundle exec serverkit validate recipe.yml.erb --variables=variables
+
+notifications:
+  email: false
