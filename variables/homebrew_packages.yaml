@@ -46,7 +46,6 @@ homebrew_packages:
   - maven
   - jenkins
   - mas
-  - assh
 
   # Ruby
   - rbenv
@@ -70,3 +69,5 @@ homebrew_packages:
 homebrew_packages_with_options:
   - name: vim
     options: '--with-lua --with-python3'
+  - name: assh
+    options: '--HEAD'
