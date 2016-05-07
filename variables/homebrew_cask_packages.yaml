@@ -22,4 +22,3 @@ homebrew_cask_packages:
   - docker
   - docker-compose
   - google-cloud-sdk
-  - fitbit-connect
