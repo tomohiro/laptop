@@ -3,7 +3,6 @@ atom_packages:
   - atom-html-preview
   - autocomplete-emojis
   - autocomplete-paths
-  - autocomplete-plus
   - autocomplete-snippets
   - color-picker
   - docblockr
