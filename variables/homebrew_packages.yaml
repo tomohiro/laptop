@@ -47,6 +47,7 @@ homebrew_packages:
   - jenkins
   - mas
   - aws-elasticbeanstalk
+  - keybase
 
   # Ruby
   - rbenv
