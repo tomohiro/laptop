@@ -18,7 +18,6 @@ homebrew_cask_packages:
   - kindle
   - font-fontawesome
   - aerial
-  - silverlight
   - docker
   - docker-compose
   - google-cloud-sdk
