@@ -11,3 +11,4 @@ go_packages:
   - github.com/apex/apex/cmd/apex
   - github.com/yields/phony
   - github.com/govend/govend
+  - robpike.io/cmd/translate
