@@ -9,8 +9,6 @@ homebrew_cask_packages:
   - iterm2
   - virtualbox
   - vagrant
-  - packer
-  - terraform
   - postgres
   - anvil
   - atom
@@ -19,7 +17,6 @@ homebrew_cask_packages:
   - font-fontawesome
   - aerial
   - docker
-  - docker-compose
   - google-cloud-sdk
   - visual-studio-code
   - github-desktop
