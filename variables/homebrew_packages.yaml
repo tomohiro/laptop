@@ -48,6 +48,8 @@ homebrew_packages:
   - mas
   - aws-elasticbeanstalk
   - keybase
+  - packer
+  - terraform
 
   # Ruby
   - rbenv
