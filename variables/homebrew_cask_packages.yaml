@@ -20,3 +20,4 @@ homebrew_cask_packages:
   - google-cloud-sdk
   - visual-studio-code
   - github-desktop
+  - insomnia
