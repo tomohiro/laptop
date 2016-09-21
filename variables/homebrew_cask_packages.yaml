@@ -21,3 +21,4 @@ homebrew_cask_packages:
   - visual-studio-code
   - github-desktop
   - insomnia
+  - chatwork
