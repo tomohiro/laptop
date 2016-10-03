@@ -22,3 +22,7 @@ homebrew_cask_packages:
   - github-desktop
   - insomnia
   - chatwork
+
+  # QuickLook plugins
+  - qlvideo
+  - qlmarkdown
