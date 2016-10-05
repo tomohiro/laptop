@@ -8,6 +8,7 @@ homebrew_packages:
   # Tools
   - zsh
   - zsh-completions
+  - zplug
   - tmux
   - wget
   - tree
