@@ -11,6 +11,7 @@ homebrew_packages:
   - zplug
   - tmux
   - wget
+  - w3m
   - tree
   - fortune
   - lv
