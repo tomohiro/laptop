@@ -33,6 +33,7 @@ homebrew_packages:
   - youtube-dl
   - ffmpeg
   - peco
+  - ghq
   - colordiff
   - direnv
   - pandoc
