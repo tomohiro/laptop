@@ -27,6 +27,7 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (3.2.0)
     net-telnet (0.1.1)
+    plist (3.2.0)
     rainbow (2.1.0)
     serverkit (0.6.8)
       activemodel
@@ -39,6 +40,9 @@ GEM
       specinfra (>= 2.31.0)
       unix-crypt
     serverkit-atom (0.0.1)
+      serverkit
+    serverkit-defaults (0.0.3)
+      plist
       serverkit
     serverkit-go (1.0.0)
       serverkit (~> 0.6.5)
@@ -65,6 +69,7 @@ PLATFORMS
 DEPENDENCIES
   serverkit
   serverkit-atom
+  serverkit-defaults
   serverkit-go
   serverkit-homebrew
   serverkit-rbenv
