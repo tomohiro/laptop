@@ -64,6 +64,11 @@ resources:
     name: <%= name %>
   <%- end -%>
 
+  # Set the Default shell to Zsh
+  - type: command
+    check_script: "finger -l | grep 'zsh'"
+    script: sudo chsh -s $(which zsh) <%= ENV['USER'] %>
+
   # Cleanup packages
   - type: command
     script: brew cleanup
