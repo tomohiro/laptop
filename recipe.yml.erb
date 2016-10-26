@@ -58,6 +58,12 @@ resources:
     path: <%= path %>
   <%- end -%>
 
+  # Vagrant Plugins
+  <%- vagrant_plugins.each do |name| -%>
+  - type: vagrant_plugin
+    name: <%= name %>
+  <%- end -%>
+
   # Cleanup packages
   - type: command
     script: brew cleanup
