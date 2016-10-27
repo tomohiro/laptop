@@ -64,9 +64,23 @@ resources:
     name: <%= name %>
   <%- end -%>
 
+  # Defaults configurations
+  - id: autoplay_quicktime_player
+    type: defaults
+    domain: com.apple.QuickTimePlayerX
+    key: MGPlayMovieOnOpen
+    value: 1
+
+  - id: autohide_dock
+    domain: com.apple.dock
+    key: autohide
+    value: 1
+    notify:
+      - restart_dock
+
   # Set the Default shell to Zsh
   - type: command
-    check_script: "finger -l | grep 'zsh'"
+    check_script: "finger -l | grep '/usr/local/bin/zsh'"
     script: sudo chsh -s $(which zsh) <%= ENV['USER'] %>
 
   # Cleanup packages
@@ -78,3 +92,8 @@ resources:
     script: apm clean
   - type: command
     script: gem cleanup
+
+handlers:
+  - id: restart_dock
+    type: command
+    script: killall Dock
