@@ -23,6 +23,7 @@ homebrew_cask_packages:
   - insomnia
   - chatwork
   - bowtie
+  - boostnote
 
   # QuickLook plugins
   - qlvideo
