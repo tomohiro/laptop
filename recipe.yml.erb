@@ -53,8 +53,8 @@ resources:
 
   # Set the Default shell to Zsh
   - type: command
-    check_script: "finger -l | grep '/usr/local/bin/zsh'"
-    script: sudo chsh -s $(which zsh) <%= ENV['USER'] %>
+    check_script: finger -l | grep '/usr/local/bin/zsh'
+    script: sudo chsh -s $(which zsh) $(whoami)
 
   # Cleanup packages
   - type: command
