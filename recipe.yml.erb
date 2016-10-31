@@ -3,35 +3,7 @@
 resources:
   # Prepare install packages
   - type: command
-    script: brew update
-  - type: command
-    script: brew upgrade
-  - type: command
     script: apm upgrade --compatible --no-confirm
-
-  # Homebrew Taps
-  <%- homebrew_taps.each do |tap| -%>
-  - type: homebrew_tap
-    name: <%= tap %>
-  <%- end -%>
-
-  # Homebrew packages
-  <%- homebrew_packages.each do |package| -%>
-  - type: homebrew_package
-    name: <%= package %>
-  <%- end -%>
-
-  <%- homebrew_packages_with_options.each do |package| -%>
-  - type: homebrew_package
-    name: <%= package['name'] %>
-    options: <%= package['options'] %>
-  <%- end -%>
-
-  # Homebrew Cask packages
-  <%- homebrew_cask_packages.each do |package| -%>
-  - type: homebrew_cask_package
-    name: <%= package %>
-  <%- end -%>
 
   # Rbenv
   - type: rbenv_ruby
@@ -85,10 +57,6 @@ resources:
     script: sudo chsh -s $(which zsh) <%= ENV['USER'] %>
 
   # Cleanup packages
-  - type: command
-    script: brew cleanup
-  - type: command
-    script: brew cask cleanup
   - type: command
     script: apm clean
   - type: command
