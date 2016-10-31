@@ -53,6 +53,7 @@ homebrew_packages:
   - keybase
   - packer
   - terraform
+  - dnsmasq
 
   # Ruby
   - rbenv
