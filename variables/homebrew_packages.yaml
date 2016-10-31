@@ -44,7 +44,7 @@ homebrew_packages:
   - git-lfs
   - ansible
   - e2fsprogs
-  - gpg
+  - gnupg2
   - nginx
   - maven
   - jenkins
@@ -59,7 +59,6 @@ homebrew_packages:
   - ruby-build
   - rbenv-vars
   - rbenv-default-gems
-  - rbenv-gem-rehash
   - rbenv-readline
 
   # Node.js
