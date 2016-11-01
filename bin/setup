@@ -1,7 +1,18 @@
 #!/bin/sh
 
-bundle install --path vendor/bundle
+setup() {
+  bundle install --path vendor/bundle
+}
 
-bundle exec serverkit apply recipe.yml.erb \
-  --variables=variables \
-  --log-level=DEBUG
+serverkit_apply() {
+  local recipe=$1
+
+  bundle exec serverkit apply "$recipe" \
+    --variables=variables \
+    --log-level=DEBUG
+}
+
+setup
+serverkit_apply 'recipe.yml.erb'
+serverkit_apply 'recipes/homebrew_recipe.yml.erb'
+serverkit_apply 'recipes/dnsmasq_recipe.yml'
