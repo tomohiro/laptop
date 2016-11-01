@@ -4,6 +4,7 @@ os:
   - osx
 
 script:
+  - gem install bundler --no-ri --no-rdoc
   - bundle exec serverkit validate recipe.yml.erb --variables=variables
 
 notifications:
