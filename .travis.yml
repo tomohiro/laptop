@@ -3,8 +3,10 @@ language: objective-c
 os:
   - osx
 
-script:
+before_script:
   - gem install bundler --no-ri --no-rdoc
+
+script:
   - bundle exec serverkit validate recipe.yml.erb --variables=variables
 
 notifications:
