@@ -1,13 +1,9 @@
 # vim:ft=yaml
 
 resources:
-  - type: command
-    check_script: brew list dnsmasq && test -d /etc/resolver
-    script: sudo mkdir /etc/resolver && sudo chown $(whoami):wheel /etc/resolver
-
   - type: template
-    destination: /etc/resolver/dev
-    source: templates/dev
+    destination: /usr/local/etc/dnsmasq.conf
+    source: templates/dnsmasq.conf
     notify:
       - restart_dnsmasq
 
