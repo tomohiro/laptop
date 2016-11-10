@@ -15,4 +15,4 @@ serverkit_apply() {
 setup
 serverkit_apply 'recipe.yml.erb'
 serverkit_apply 'recipes/homebrew_recipe.yml.erb'
-serverkit_apply 'recipes/dnsmasq_recipe.yml'
+serverkit_apply 'recipes/dnsmasq_recipe.yml.erb'
