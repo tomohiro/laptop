@@ -1,0 +1,8 @@
+# vim: ft=yaml
+---
+resources:
+  # Go packages
+  <%- go_packages.each do |path| -%>
+  - type: go_package
+    path: <%= path %>
+  <%- end -%>

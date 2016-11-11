@@ -1,0 +1,8 @@
+# vim: ft=yaml
+---
+resources:
+  # Vagrant Plugins
+  <%- vagrant_plugins.each do |name| -%>
+  - type: vagrant_plugin
+    name: <%= name %>
+  <%- end -%>
