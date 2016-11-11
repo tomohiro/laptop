@@ -13,11 +13,4 @@ serverkit_apply() {
 }
 
 setup
-
-serverkit_apply 'recipes/homebrew_recipe.yml.erb'
-serverkit_apply 'recipes/atom_recipe.yml.erb'
-serverkit_apply 'recipes/dnsmasq_recipe.yml.erb'
-serverkit_apply 'recipes/go_recipe.yml.erb'
-serverkit_apply 'recipes/ruby_recipe.yml.erb'
-serverkit_apply 'recipes/vagrant_recipe.yml.erb'
-serverkit_apply 'recipes/defaults_recipe.yml.erb'
+serverkit_apply 'recipes/main_recipe.yml'
