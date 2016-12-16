@@ -16,6 +16,12 @@ resources:
     notify:
       - restart_dock
 
+  - id: textedit_default_plaintext
+    type: defaults
+    domain: com.apple.TextEdit
+    key: RichText
+    value: 0
+
   # Set the Default shell to Zsh
   - type: command
     check_script: finger -l | grep '/usr/local/bin/zsh'
