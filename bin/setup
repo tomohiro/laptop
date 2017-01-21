@@ -4,13 +4,14 @@ setup() {
   bundle install --path vendor/bundle
 }
 
-serverkit_apply() {
-  local recipe=$1
+serverkit() {
+  local command=$1
+  local recipe=$2
 
-  bundle exec serverkit apply "$recipe" \
+  bundle exec serverkit $command "$recipe" \
     --variables=variables \
     --log-level=DEBUG
 }
 
 setup
-serverkit_apply 'recipes/main_recipe.yml'
+serverkit apply 'recipes/main_recipe.yml'
