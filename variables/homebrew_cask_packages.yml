@@ -25,6 +25,7 @@ homebrew_cask_packages:
   - bowtie
   - boostnote
   - mysqlworkbench
+  - ngrok
 
   # QuickLook plugins
   - qlvideo
