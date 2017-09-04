@@ -5,6 +5,13 @@ GIT
     serverkit-vagrant_plugin (0.1.0)
       serverkit (~> 0.6.8)
 
+GIT
+  remote: https://github.com/flori/json.git
+  revision: 7f4cfd853f2c919d854fb95548a19980feff17e8
+  branch: v1.8
+  specs:
+    json (1.8.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -21,7 +28,6 @@ GEM
     hashie (3.4.6)
     highline (1.7.8)
     i18n (0.7.0)
-    json (1.8.3)
     minitest (5.9.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -67,6 +73,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  json!
   serverkit
   serverkit-atom
   serverkit-defaults
@@ -76,4 +83,4 @@ DEPENDENCIES
   serverkit-vagrant_plugin!
 
 BUNDLED WITH
-   1.13.6
+   1.14.5
