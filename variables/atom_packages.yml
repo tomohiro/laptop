@@ -1,4 +1,8 @@
 atom_packages:
+  - atom-clock
+  - file-icons
+  - file-types
+
   - Zen
   - atom-html-preview
   - autocomplete-emojis
@@ -6,8 +10,6 @@ atom_packages:
   - autocomplete-snippets
   - color-picker
   - docblockr
-  - file-icons
-  - file-types
   - go-plus
   - go-to-line
   - jumpy
@@ -26,3 +28,7 @@ atom_packages:
   - symbols-tree-view
   - travis-ci-status
   - vim-mode-plus
+
+  # IDE packages
+  - atom-ide-ui
+  - ide-php
