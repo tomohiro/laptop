@@ -8,8 +8,10 @@ homebrew_packages:
   # Tools
   - zsh
   - zsh-completions
+  - zplug
   - tmux
   - wget
+  - w3m
   - tree
   - fortune
   - lv
@@ -31,6 +33,7 @@ homebrew_packages:
   - youtube-dl
   - ffmpeg
   - peco
+  - ghq
   - colordiff
   - direnv
   - pandoc
@@ -41,19 +44,25 @@ homebrew_packages:
   - git-lfs
   - ansible
   - e2fsprogs
-  - gpg
+  - gnupg2
   - nginx
   - maven
   - jenkins
   - mas
   - aws-elasticbeanstalk
+  - keybase
+  - packer
+  - terraform
+  - dnsmasq
+  - docker-clean
+  - ccat
+  - translate-shell
 
   # Ruby
   - rbenv
   - ruby-build
   - rbenv-vars
   - rbenv-default-gems
-  - rbenv-gem-rehash
   - rbenv-readline
 
   # Node.js
@@ -63,8 +72,11 @@ homebrew_packages:
   # Python
   - pyenv
 
-  # Languages
+  # Go
   - go
+  - glide
+
+  # Other Languages
   - rust
 
 homebrew_packages_with_options:

@@ -1,0 +1,4 @@
+---
+dnsmasq_hosts:
+  - domain: dev
+    address: 127.0.0.1

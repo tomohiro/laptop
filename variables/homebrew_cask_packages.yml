@@ -9,8 +9,6 @@ homebrew_cask_packages:
   - iterm2
   - virtualbox
   - vagrant
-  - packer
-  - terraform
   - postgres
   - anvil
   - atom
@@ -18,7 +16,17 @@ homebrew_cask_packages:
   - kindle
   - font-fontawesome
   - aerial
-  - silverlight
   - docker
-  - docker-compose
   - google-cloud-sdk
+  - visual-studio-code
+  - github-desktop
+  - insomnia
+  - chatwork
+  - bowtie
+  - boostnote
+  - mysqlworkbench
+  - ngrok
+
+  # QuickLook plugins
+  - qlvideo
+  - qlmarkdown

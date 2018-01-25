@@ -1,4 +1,4 @@
-# vim: ft=yaml
+# vim:ft=yaml
 
 resources:
   # Prepare install packages
@@ -6,8 +6,6 @@ resources:
     script: brew update
   - type: command
     script: brew upgrade
-  - type: command
-    script: apm upgrade --compatible --no-confirm
 
   # Homebrew Taps
   <%- homebrew_taps.each do |tap| -%>
@@ -33,37 +31,8 @@ resources:
     name: <%= package %>
   <%- end -%>
 
-  # Rbenv
-  - type: rbenv_ruby
-    version: 2.3.0
-    global: true
-
-  # RubyGems
-  - type: command
-    script: gem update
-  - type: command
-    script: gem install bundler pit mechanize
-
-  # Atom packages
-  <%- atom_packages.each do |package| -%>
-  - type: atom_package
-    name: <%= package %>
-  <%- end -%>
-  - type: command
-    script: apm upgrade --compatible --no-confirm
-
-  # Go packages
-  <%- go_packages.each do |path| -%>
-  - type: go_package
-    path: <%= path %>
-  <%- end -%>
-
   # Cleanup packages
   - type: command
     script: brew cleanup
   - type: command
     script: brew cask cleanup
-  - type: command
-    script: apm clean
-  - type: command
-    script: gem cleanup

@@ -1,0 +1,16 @@
+# vim: ft=yaml
+---
+resources:
+  # Rbenv
+  - type: rbenv_ruby
+    version: 2.5.0
+    global: true
+
+  # RubyGems
+  - type: command
+    script: gem update
+  - type: command
+    script: gem install bundler
+
+  - type: command
+    script: gem cleanup

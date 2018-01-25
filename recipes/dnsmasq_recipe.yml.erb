@@ -1,0 +1,26 @@
+# vim:ft=yaml
+---
+resources:
+  - type: template
+    destination: /usr/local/etc/dnsmasq.conf
+    source: templates/dnsmasq.conf.erb
+    notify:
+      - restart_dnsmasq
+
+  - type: command
+    check_script: brew list dnsmasq && test -d /etc/resolver
+    script: sudo mkdir /etc/resolver && sudo chown $(whoami):wheel /etc/resolver && sudo chmod 766 /etc/resolver
+
+  <%- dnsmasq_hosts.each do |host| -%>
+  - type: template
+    destination: /etc/resolver/<%= host['domain'] %>
+    source: templates/dnsmasq.resolv.conf.erb
+    mode: 0766
+    notify:
+      - restart_dnsmasq
+  <%- end -%>
+
+handlers:
+  - id: restart_dnsmasq
+    type: command
+    script: sudo brew services restart dnsmasq
