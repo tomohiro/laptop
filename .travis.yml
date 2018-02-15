@@ -3,7 +3,7 @@ language: objective-c
 os:
   - osx
 
-before:
+before_script:
   - gem update bundler
 
 script:
