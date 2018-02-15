@@ -1,12 +1,12 @@
 GIT
-  remote: https://github.com/Tomohiro/serverkit-vagrant_plugin.git
+  remote: git://github.com/Tomohiro/serverkit-vagrant_plugin.git
   revision: b688baaed1e5c051b6e3b6983fe0cd93a0e8e5da
   specs:
     serverkit-vagrant_plugin (0.1.0)
       serverkit (~> 0.6.8)
 
 GIT
-  remote: https://github.com/flori/json.git
+  remote: git://github.com/flori/json.git
   revision: 7f4cfd853f2c919d854fb95548a19980feff17e8
   branch: v1.8
   specs:
@@ -36,7 +36,7 @@ GEM
     net-telnet (0.1.1)
     plist (3.4.0)
     rainbow (3.0.0)
-    serverkit (0.6.9)
+    serverkit (0.6.8)
       activemodel
       activesupport (< 5.0.0)
       bundler
@@ -82,6 +82,7 @@ DEPENDENCIES
   serverkit-homebrew
   serverkit-rbenv
   serverkit-vagrant_plugin!
+
 
 BUNDLED WITH
    1.16.1
