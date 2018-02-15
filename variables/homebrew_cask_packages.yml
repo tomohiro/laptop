@@ -21,11 +21,11 @@ homebrew_cask_packages:
   - visual-studio-code
   - github-desktop
   - insomnia
-  - chatwork
   - bowtie
   - boostnote
   - mysqlworkbench
   - ngrok
+  - bitbar
 
   # QuickLook plugins
   - qlvideo

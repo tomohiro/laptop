@@ -4,4 +4,5 @@ homebrew_taps:
   - thoughtbot/formulae
   - caskroom/cask
   - caskroom/fonts
+  - caskroom/versions
   - argon/mas
