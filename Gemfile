@@ -8,4 +8,4 @@ gem 'serverkit-atom'
 gem 'serverkit-go'
 gem 'serverkit-vagrant_plugin', github: 'Tomohiro/serverkit-vagrant_plugin'
 
-gem 'json', git: 'https://github.com/flori/json.git', branch: 'v1.8'
+gem 'json', github: 'flori/json', branch: 'v1.8'

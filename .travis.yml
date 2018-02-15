@@ -3,6 +3,10 @@ language: objective-c
 os:
   - osx
 
+before_install:
+  - gem update bundler
+  - bundle config --local github.https true
+
 script:
   - bundle exec serverkit validate recipes/main_recipe.yml --variables=variables
 
