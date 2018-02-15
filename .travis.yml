@@ -3,6 +3,9 @@ language: objective-c
 os:
   - osx
 
+before:
+  - gem update bundler
+
 script:
   - bundle exec serverkit validate recipes/main_recipe.yml --variables=variables
 
