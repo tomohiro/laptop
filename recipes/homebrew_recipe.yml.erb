@@ -6,6 +6,8 @@ resources:
     script: brew update
   - type: command
     script: brew upgrade
+  - type: command
+    script: brew cask upgrade
 
   # Homebrew Taps
   <%- homebrew_taps.each do |tap| -%>
