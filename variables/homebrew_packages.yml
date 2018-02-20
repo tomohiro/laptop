@@ -84,3 +84,5 @@ homebrew_packages_with_options:
     options: '--with-lua --with-python3'
   - name: assh
     options: '--HEAD'
+  - name: yarn
+    options: '--without-node'
