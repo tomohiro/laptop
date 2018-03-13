@@ -1,6 +1,5 @@
 homebrew_cask_packages:
   - java
-  - dropbox
   - firefox
   - google-chrome
   - skype
