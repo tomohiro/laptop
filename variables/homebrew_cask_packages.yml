@@ -3,9 +3,7 @@ homebrew_cask_packages:
   - dropbox
   - firefox
   - google-chrome
-  - limechat
   - skype
-  - githubpulse
   - iterm2
   - virtualbox
   - vagrant
@@ -19,7 +17,6 @@ homebrew_cask_packages:
   - docker
   - google-cloud-sdk
   - visual-studio-code
-  - github-desktop
   - insomnia
   - bowtie
   - boostnote
