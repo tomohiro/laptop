@@ -53,7 +53,7 @@ homebrew_packages:
   - heroku-toolbelt
   - xhyve
   - aws-elasticbeanstalk
-  - terraform
+  - tfenv
   - packer
   - docker-clean
 
