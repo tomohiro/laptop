@@ -27,7 +27,6 @@ homebrew_packages:
   - the_silver_searcher
   - jq
   - markdown
-  - heroku-toolbelt
   - ifstat
   - osxutils
   - youtube-dl
@@ -39,24 +38,27 @@ homebrew_packages:
   - pandoc
   - thefuck
   - pwgen
-  - awscli
-  - xhyve
   - git-lfs
   - ansible
   - e2fsprogs
   - gnupg2
-  - nginx
-  - maven
-  - jenkins
   - mas
-  - aws-elasticbeanstalk
   - keybase
-  - packer
-  - terraform
   - dnsmasq
-  - docker-clean
   - ccat
   - translate-shell
+
+  # Infrastructure
+  - awscli
+  - heroku-toolbelt
+  - xhyve
+  - aws-elasticbeanstalk
+  - terraform
+  - packer
+  - docker-clean
+
+  # Swift
+  - cocoapods
 
   # Ruby
   - rbenv
