@@ -1,15 +1,10 @@
 homebrew_packages:
   # Libraries
-  - brew-cask
   - readline
   - libxml2
   - libxslt
 
   # Tools
-  - zsh
-  - zsh-completions
-  - zplug
-  - tmux
   - wget
   - w3m
   - tree
@@ -17,45 +12,57 @@ homebrew_packages:
   - lv
   - unrar
   - p7zip
-  - ssh-copy-id
-  - keychain
-  - mercurial
-  - git
-  - hub
-  - gitsh
-  - tig
-  - the_silver_searcher
   - jq
   - markdown
   - ifstat
-  - osxutils
   - youtube-dl
   - ffmpeg
-  - peco
-  - ghq
-  - colordiff
   - direnv
   - pandoc
   - thefuck
   - pwgen
-  - git-lfs
-  - ansible
   - e2fsprogs
-  - gnupg2
-  - mas
-  - keybase
   - dnsmasq
+  - pt
+
+  # Mac Util
+  - mas
+  - osxutils
+
+  # Shell
+  - zsh
+  - zsh-completions
+  - zplug
+  - tmux
+  - peco
+  - colordiff
   - ccat
   - translate-shell
 
+  # Security
+  - ssh-copy-id
+  - keychain
+  - gnupg2
+  - keybase
+
+  # VCS
+  - mercurial
+  - git
+  - git-lfs
+  - ghq
+  - gitsh
+  - tig
+  - hub
+
   # Infrastructure
   - awscli
+  - aws-shell
   - heroku-toolbelt
-  - xhyve
   - aws-elasticbeanstalk
   - tfenv
   - packer
   - docker-clean
+  - ansible
 
   # Swift
   - cocoapods
@@ -76,7 +83,6 @@ homebrew_packages:
 
   # Go
   - go
-  - glide
 
   # Other Languages
   - rust
