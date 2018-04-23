@@ -1,35 +1,12 @@
 homebrew_packages:
-  # Libraries
-  - readline
-  - libxml2
-  - libxslt
-
-  # Tools
-  - wget
-  - w3m
-  - tree
-  - fortune
-  - lv
-  - unrar
-  - p7zip
-  - jq
-  - markdown
-  - ifstat
-  - youtube-dl
-  - ffmpeg
-  - direnv
-  - pandoc
-  - thefuck
-  - pwgen
-  - e2fsprogs
-  - dnsmasq
-  - pt
-
-  # Mac Util
+  # Mac Utils
   - mas
   - osxutils
 
   # Shell
+  - gawk
+  - tree
+  - fortune
   - zsh
   - zsh-completions
   - zplug
@@ -38,12 +15,33 @@ homebrew_packages:
   - colordiff
   - ccat
   - translate-shell
+  - direnv
+  - thefuck
+  - pt
+
+  # Text
+  - lv
+  - markdown
+  - pandoc
+  - jq
 
   # Security
+  - openssl
+  - pwgen
   - ssh-copy-id
   - keychain
   - gnupg2
   - keybase
+
+  # Archiver
+  - unrar
+  - p7zip
+
+  # Network & Internet
+  - w3m
+  - wget
+  - ifstat
+  - dnsmasq
 
   # VCS
   - mercurial
@@ -63,6 +61,10 @@ homebrew_packages:
   - packer
   - docker-clean
   - ansible
+
+  # Media
+  - youtube-dl
+  - ffmpeg
 
   # Swift
   - cocoapods
@@ -86,6 +88,11 @@ homebrew_packages:
 
   # Other Languages
   - rust
+
+  # Libraries
+  - readline
+  - libxml2
+  - libxslt
 
 homebrew_packages_with_options:
   - name: vim
