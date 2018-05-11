@@ -1,26 +1,38 @@
 homebrew_cask_packages:
-  - java
-  - firefox
+  # Browser
   - google-chrome
+  - firefox
+
+  # Messaging
   - skype
+  - discord
+
+  # Media
+  - vlc
+  - bowtie
+
+  # Ops Tools
   - iterm2
   - virtualbox
   - vagrant
-  - anvil
-  - atom
-  - vlc
-  - font-fontawesome
-  - aerial
   - docker
   - google-cloud-sdk
+  - ngrok
+  - anvil
+
+  # Development
+  - java
+  - atom
   - visual-studio-code
   - insomnia
-  - bowtie
   - boostnote
   - mysqlworkbench
-  - ngrok
   - bitbar
 
   # QuickLook plugins
   - qlvideo
   - qlmarkdown
+
+  # macOS
+  - aerial
+  - font-fontawesome
