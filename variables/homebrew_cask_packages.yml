@@ -27,6 +27,7 @@ homebrew_cask_packages:
   - insomnia
   - boostnote
   - mysqlworkbench
+  - psequel
   - bitbar
 
   # QuickLook plugins
