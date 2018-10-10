@@ -37,3 +37,5 @@ homebrew_cask_packages:
   # macOS
   - aerial
   - font-fontawesome
+  - font-noto-sans-cjk-jp
+  - font-roboto
