@@ -99,5 +99,5 @@ homebrew_packages_with_options:
     options: '--with-lua --with-python3'
   - name: assh
     options: '--HEAD'
-  - name: yarn
+  - name: yarn                 # https://yarnpkg.com/ja/docs/install#mac-stable
     options: '--without-node'
