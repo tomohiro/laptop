@@ -57,7 +57,6 @@ homebrew_packages:
   - awscli
   - aws-shell
   - heroku-toolbelt
-  - aws-elasticbeanstalk
   - tfenv
   - packer
   - docker-clean
