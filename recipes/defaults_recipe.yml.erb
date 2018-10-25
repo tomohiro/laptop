@@ -1,7 +1,11 @@
 # vim: ft=yaml
+#
+# Defaults configurations for macOS.
+# References:
+# - https://github.com/mathiasbynens/dotfiles
+# - https://qiita.com/djmonta/items/17531dde1e82d9786816
 ---
 resources:
-  # Defaults configurations
   - id: autoplay_quicktime_player
     type: defaults
     domain: com.apple.QuickTimePlayerX
@@ -20,6 +24,13 @@ resources:
     type: defaults
     domain: com.apple.TextEdit
     key: RichText
+    value: 0
+
+  # Don’t automatically rearrange Spaces based on most recent use
+  - id: stop_auto_rearrange_spaces
+    type: defaults
+    domain: com.apple.dock
+    key: mru-spaces
     value: 0
 
   # Set the Default shell to Zsh
