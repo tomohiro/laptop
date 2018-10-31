@@ -18,13 +18,11 @@ homebrew_cask_packages:
   - docker
   - google-cloud-sdk
   - ngrok
-  - anvil
 
   # Development
   - java
   - atom
   - visual-studio-code
-  - insomnia
   - boostnote
   - mysqlworkbench
   - psequel
