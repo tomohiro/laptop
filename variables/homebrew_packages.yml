@@ -62,6 +62,7 @@ homebrew_packages:
   - packer
   - docker-clean
   - ansible
+  - hadolint
 
   # Media
   - youtube-dl
