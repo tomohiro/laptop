@@ -4,14 +4,20 @@
 # References:
 # - https://github.com/mathiasbynens/dotfiles
 # - https://qiita.com/djmonta/items/17531dde1e82d9786816
+#
+# Defaults configrations paths
+# - /Library/Preferences/
+# - ~/Library/Preferences/
 ---
 resources:
+  # Auto-play videos when opened with QuickTime Player
   - id: autoplay_quicktime_player
     type: defaults
     domain: com.apple.QuickTimePlayerX
     key: MGPlayMovieOnOpen
     value: 1
 
+  # Automatically hide the Dock
   - id: autohide_dock
     type: defaults
     domain: com.apple.dock
@@ -20,6 +26,7 @@ resources:
     notify:
       - restart_dock
 
+  # Use plain text mode for new TextEdit documents
   - id: textedit_default_plaintext
     type: defaults
     domain: com.apple.TextEdit
@@ -33,6 +40,15 @@ resources:
     key: mru-spaces
     value: 0
 
+  # Avoid creating .DS_Store files on network
+  - id: disable_create_ds_store_files
+    type: defaults
+    domain: com.apple.desktopservices
+    key: DSDontWriteNetworkStores
+    value: 1
+    notify:
+      - restart_finder
+
   # Set the Default shell to Zsh
   - type: command
     check_script: finger -l | grep '/usr/local/bin/zsh'
@@ -42,3 +58,6 @@ handlers:
   - id: restart_dock
     type: command
     script: killall Dock
+  - id: restart_finder
+    type: command
+    script: killall Finder
