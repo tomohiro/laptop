@@ -2,7 +2,7 @@ go_packages:
   - golang.org/x/tools/cmd/godoc
   - golang.org/x/tools/cmd/goimports
   - golang.org/x/tools/cmd/cover
-  - golang.org/x/tools/cmd/oracle
+  - golang.org/x/tools/cmd/guru
   - github.com/nathany/looper
   - github.com/motemen/gompatible/cmd/gompat
   - github.com/martingallagher/gawp
