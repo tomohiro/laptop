@@ -1,8 +1,4 @@
 homebrew_taps:
-  - homebrew/versions
-  - homebrew/dupes
   - thoughtbot/formulae
-  - caskroom/cask
-  - caskroom/fonts
-  - caskroom/versions
-  - argon/mas
+  - homebrew/cask-fonts
+  - homebrew/cask-versions
