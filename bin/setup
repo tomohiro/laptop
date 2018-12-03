@@ -4,6 +4,13 @@ setup() {
   bundle install --path vendor/bundle
 }
 
+set_gopath() {
+  if [ -z ${GOPATH} ]; then
+    # If $GOPATH is empty, Go installs packages to $HOME/go.
+    export GOPATH=${HOME}/Workspaces/Repositories
+  fi
+}
+
 serverkit() {
   local command=$1
   local recipe=$2
@@ -14,4 +21,5 @@ serverkit() {
 }
 
 setup
+set_gopath
 serverkit apply 'recipes/main_recipe.yml'
