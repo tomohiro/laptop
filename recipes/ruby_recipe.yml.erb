@@ -3,14 +3,13 @@
 resources:
   # Rbenv
   - type: rbenv_ruby
-    version: 2.5.0
+    version: 2.5.3
     global: true
 
   # RubyGems
   - type: command
-    script: gem update
+    script: gem update -f
   - type: command
     script: gem install bundler
-
   - type: command
     script: gem cleanup
