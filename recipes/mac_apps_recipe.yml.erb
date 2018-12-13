@@ -1,0 +1,11 @@
+# vim:ft=yaml
+
+resources:
+  # Prepare install packages
+  - type: command
+    script: mas upgrade
+
+  <%- mac_apps.each do |app| -%>
+  - type: command
+    script: mas lucky <%= app %>
+  <%- end -%>
