@@ -1,4 +1,5 @@
 homebrew_taps:
   - thoughtbot/formulae
+  - homebrew/services
   - homebrew/cask-fonts
   - homebrew/cask-versions
