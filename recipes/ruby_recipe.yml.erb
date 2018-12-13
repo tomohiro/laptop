@@ -1,7 +1,12 @@
 # vim: ft=yaml
 ---
 resources:
-  # Rbenv
+  # rbenv-default-gems
+  - type: template
+    destination: '~/.rbenv/default-gems'
+    source: templates/default-gems.erb
+
+  # Install Ruby
   - type: rbenv_ruby
     version: 2.5.3
     global: true
@@ -9,7 +14,5 @@ resources:
   # RubyGems
   - type: command
     script: gem update -f
-  - type: command
-    script: gem install bundler
   - type: command
     script: gem cleanup

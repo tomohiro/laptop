@@ -20,3 +20,6 @@ resources:
 
   - type: recipe
     path: recipes/defaults_recipe.yml.erb
+
+  - type: recipe
+    path: recipes/mac_apps_recipe.yml.erb

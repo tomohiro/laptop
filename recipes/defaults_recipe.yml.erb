@@ -10,12 +10,23 @@
 # - ~/Library/Preferences/
 ---
 resources:
-  # Auto-play videos when opened with QuickTime Player
-  - id: autoplay_quicktime_player
+  # Set Language
+  - id: set_language
     type: defaults
-    domain: com.apple.QuickTimePlayerX
-    key: MGPlayMovieOnOpen
-    value: 1
+    domain: NSGlobalDomain
+    key: AppleLanguages
+    value:
+      - "en-JP"
+      - "ja-JP"
+
+  # Wipe all (default) app icons from the Dock
+  - id: wipe_all_app_iconrs_from_dock
+    type: defaults
+    domain: com.apple.dock
+    key: persistent-apps
+    value: []
+    notify:
+      - restart_dock
 
   # Automatically hide the Dock
   - id: autohide_dock
@@ -26,13 +37,6 @@ resources:
     notify:
       - restart_dock
 
-  # Use plain text mode for new TextEdit documents
-  - id: textedit_default_plaintext
-    type: defaults
-    domain: com.apple.TextEdit
-    key: RichText
-    value: 0
-
   # Don’t automatically rearrange Spaces based on most recent use
   - id: stop_auto_rearrange_spaces
     type: defaults
@@ -41,13 +45,36 @@ resources:
     value: 0
 
   # Avoid creating .DS_Store files on network
-  - id: disable_create_ds_store_files
+  - id: disable_create_ds_store_files_on_network
     type: defaults
     domain: com.apple.desktopservices
     key: DSDontWriteNetworkStores
     value: 1
     notify:
       - restart_finder
+
+  # Avoid creating .DS_Store files on usb
+  - id: disable_create_ds_store_files_on_usb
+    type: defaults
+    domain: com.apple.desktopservices
+    key: DSDontWriteUSBStores
+    value: 1
+    notify:
+      - restart_finder
+
+  # Auto-play videos when opened with QuickTime Player
+  - id: autoplay_quicktime_player
+    type: defaults
+    domain: com.apple.QuickTimePlayerX
+    key: MGPlayMovieOnOpen
+    value: 1
+
+  # Use plain text mode for new TextEdit documents
+  - id: textedit_default_plaintext
+    type: defaults
+    domain: com.apple.TextEdit
+    key: RichText
+    value: 0
 
   # Set the Default shell to Zsh
   - type: command
