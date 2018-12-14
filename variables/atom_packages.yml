@@ -16,6 +16,7 @@ atom_packages:
   - language-csharp
   - language-haml
   - language-puppet
+  - lauguage-docker
   - linter-rubocop
   - markdown-pdf
   - minimap
