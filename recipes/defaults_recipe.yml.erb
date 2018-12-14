@@ -49,7 +49,7 @@ resources:
     type: defaults
     domain: com.apple.desktopservices
     key: DSDontWriteNetworkStores
-    value: 1
+    value: 'true'
     notify:
       - restart_finder
 
@@ -58,7 +58,7 @@ resources:
     type: defaults
     domain: com.apple.desktopservices
     key: DSDontWriteUSBStores
-    value: 1
+    value: 'true'
     notify:
       - restart_finder
 
