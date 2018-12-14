@@ -1,0 +1,8 @@
+# vim: ft=yaml
+---
+resources:
+  # python-default-packages
+  #   Set `default-packages` to the $(pyenv root)/default-packages
+  - type: template
+    destination: /usr/local/var/pyenv/default-packages
+    source: templates/default-python-packages.erb

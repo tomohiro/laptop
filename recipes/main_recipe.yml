@@ -19,6 +19,9 @@ resources:
     path: recipes/nodejs_recipe.yml.erb
 
   - type: recipe
+    path: recipes/python_recipe.yml.erb
+
+  - type: recipe
     path: recipes/vagrant_recipe.yml.erb
 
   - type: recipe
