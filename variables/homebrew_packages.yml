@@ -80,6 +80,7 @@ homebrew_packages:
   # Node.js
   - nodenv
   - node-build
+  - nodenv/nodenv/nodenv-default-packages
 
   # Python
   - pyenv
