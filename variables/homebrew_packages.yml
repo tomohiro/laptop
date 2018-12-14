@@ -8,7 +8,6 @@ homebrew_packages:
   - tree
   - fortune
   - zsh
-  - zsh-completions
   - zplug
   - tmux
   - peco
