@@ -6,8 +6,8 @@
 #   $ /usr/bin/ruby --version
 #   ruby 2.3.7p456 (2018-03-28 revision 63024) [universal.x86_64-darwin18]
 #
-# (2) Homebrew
-#   $ /usr/local/bin/ruby --version
+# (2) Homebrew (This is keg-only)
+#   $ /usr/local/opt/ruby/bin/ruby -v
 #   ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-darwin18]
 #
 # (3) Rbenv's Ruby versions
@@ -19,11 +19,8 @@ resources:
     destination: <%= ENV['HOME'] %>/.rbenv/default-gems
     source: templates/default-rubygems.erb
 
-  # Set Homebrew Ruby version to global
-  # The Ruby required by another Homebrew packages (e.g. vim)
-  # So we need keep both Homebrew's Ruby and rbenv's rubies
   - type: rbenv_ruby
-    version: system
+    version: 2.5.3
     global: true
 
   # RubyGems
