@@ -20,6 +20,7 @@ homebrew_packages:
   - progress
 
   # Text
+  - vim
   - lv
   - markdown
   - pandoc
@@ -73,9 +74,7 @@ homebrew_packages:
   # Ruby
   - rbenv
   - ruby-build
-  - rbenv-vars
   - rbenv-default-gems
-  - rbenv-readline
 
   # Node.js
   - nodenv
@@ -98,8 +97,6 @@ homebrew_packages:
   - libxslt
 
 homebrew_packages_with_options:
-  - name: vim
-    options: '--with-lua --with-python3'
   - name: assh
     options: '--HEAD'
   - name: yarn                 # https://yarnpkg.com/ja/docs/install#mac-stable
