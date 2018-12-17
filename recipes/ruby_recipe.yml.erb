@@ -4,7 +4,7 @@ resources:
   # rbenv-default-gems
   - type: template
     destination: <%= ENV['HOME'] %>/.rbenv/default-gems
-    source: templates/default-gems.erb
+    source: templates/default-rubygems.erb
 
   # Install Ruby
   - type: rbenv_ruby
