@@ -4,5 +4,5 @@ resources:
   # python-default-packages
   #   Set `default-packages` to the $(pyenv root)/default-packages
   - type: template
-    destination: /usr/local/var/pyenv/default-packages
+    destination: <%= %x[pyenv root].strip %>/default-packages
     source: templates/default-python-packages.erb
