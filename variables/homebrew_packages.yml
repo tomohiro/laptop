@@ -30,7 +30,6 @@ homebrew_packages:
   - openssl
   - pwgen
   - ssh-copy-id
-  - keychain
   - gnupg2
   - keybase
 
