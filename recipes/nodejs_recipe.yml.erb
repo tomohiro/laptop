@@ -4,5 +4,5 @@ resources:
   # nodenv-default-packages
   #   Set `default-packages` to the $(nodenv root)/default-packages
   - type: template
-    destination: <%= ENV['HOME'] %>/.nodenv/default-packages
+    destination: <%= %x[nodenv root].strip %>/default-packages
     source: templates/default-nodejs-packages.erb

@@ -1,14 +1,29 @@
 #!/bin/sh
 
-setup() {
+set -e
+
+prepare() {
   bundle install --path vendor/bundle
 }
 
+# If $GOPATH is empty, Go installs packages to $HOME/go.
 set_gopath() {
-  if [ -z ${GOPATH} ]; then
-    # If $GOPATH is empty, Go installs packages to $HOME/go.
-    export GOPATH=${HOME}/Workspaces/Repositories
-  fi
+  export GOPATH=${HOME}/Workspaces/Repositories
+}
+
+# Set XDG Base Directory
+#   - https://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
+set_xdg_path() {
+  export XDG_DATA_HOME=$HOME/.local/share
+  export XDG_CONFIG_HOME=$HOME/.config
+  export XDG_CACHE_HOME=$HOME/.cache
+}
+
+# Set rbenv, pyenv, nodenv directory based on XDG
+set_lang_path() {
+  export RBENV_ROOT=$XDG_DATA_HOME/rbenv
+  export PYENV_ROOT=$XDG_DATA_HOME/pyenv
+  export NODENV_ROOT=$XDG_DATA_HOME/nodenv
 }
 
 serverkit() {
@@ -20,6 +35,10 @@ serverkit() {
     --log-level=DEBUG
 }
 
-setup
+prepare
+set_xdg_path
+set_lang_path
 set_gopath
 serverkit apply 'recipes/main_recipe.yml'
+
+echo "===> All process finished!"
