@@ -8,7 +8,7 @@ prepare() {
 
 # If $GOPATH is empty, Go installs packages to $HOME/go.
 set_gopath() {
-  export GOPATH=${HOME}/Workspaces/Repositories
+  export GOPATH=${HOME}/.local
 }
 
 # Set XDG Base Directory
