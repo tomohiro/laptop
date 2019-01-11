@@ -1,6 +1,11 @@
 # vim: ft=yaml
 ---
 resources:
+  # Change VirtualBox VM default location
+  - type: command
+    check_script: "VBoxManage list systemproperties | grep '<%= ENV['HOME'] %>/Library/VirtualBox VMs'"
+    script: VBoxManage setproperty machinefolder "<%= ENV['HOME'] %>/Library/VirtualBox VMs"
+
   # Vagrant Plugins
   <%- vagrant_plugins.each do |name| -%>
   - type: vagrant_plugin
