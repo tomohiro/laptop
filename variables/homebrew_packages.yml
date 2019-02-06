@@ -25,6 +25,7 @@ homebrew_packages:
   - markdown
   - pandoc
   - jq
+  - fx
 
   # Security
   - openssl
@@ -43,6 +44,7 @@ homebrew_packages:
   - ifstat
   - dnsmasq
   - httpstat
+  - httpie
 
   # VCS
   - mercurial
