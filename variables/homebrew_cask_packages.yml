@@ -37,3 +37,4 @@ homebrew_cask_packages:
   - font-fontawesome
   - font-noto-sans-cjk-jp
   - font-roboto
+  - spectacle
