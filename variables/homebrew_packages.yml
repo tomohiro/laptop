@@ -65,6 +65,10 @@ homebrew_packages:
   - ansible
   - hadolint
 
+  # Database
+  - pgcli
+  - mycli
+
   # Media
   - youtube-dl
   - ffmpeg

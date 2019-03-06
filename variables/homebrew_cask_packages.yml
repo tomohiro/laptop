@@ -27,6 +27,7 @@ homebrew_cask_packages:
   - mysqlworkbench
   - psequel
   - bitbar
+  - postman
 
   # QuickLook plugins
   - qlvideo
