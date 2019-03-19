@@ -1,6 +1,7 @@
 homebrew_cask_packages:
   # Browser
   - google-chrome
+  - google-chrome-canary
   - firefox
 
   # Messaging
@@ -12,7 +13,7 @@ homebrew_cask_packages:
   - bowtie
 
   # Ops Tools
-  - iterm2
+  - hyper
   - virtualbox
   - vagrant
   - docker
@@ -21,13 +22,18 @@ homebrew_cask_packages:
 
   # Development
   - java
+  - boostnote
+  - postman
+
+  # Editor/IDE
   - atom
   - visual-studio-code
-  - boostnote
+  - phpstorm
+  - android-studio
+
+  # Database
   - mysqlworkbench
   - psequel
-  - bitbar
-  - postman
 
   # QuickLook plugins
   - qlvideo
@@ -36,6 +42,8 @@ homebrew_cask_packages:
   # macOS
   - aerial
   - font-fontawesome
+  - font-menlo-for-powerline
   - font-noto-sans-cjk-jp
   - font-roboto
   - spectacle
+  - bitbar
