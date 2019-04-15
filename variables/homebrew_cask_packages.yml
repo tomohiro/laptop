@@ -21,6 +21,7 @@ homebrew_cask_packages:
   - ngrok
 
   # Development
+  - dash
   - java
   - boostnote
   - postman
