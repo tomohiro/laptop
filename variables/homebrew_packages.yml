@@ -105,5 +105,5 @@ homebrew_packages:
 homebrew_packages_with_options:
   - name: assh
     options: '--HEAD'
-  - name: yarn                 # https://yarnpkg.com/ja/docs/install#mac-stable
-    options: '--without-node'
+  - name: yarn
+    options: '--ignore-dependencies node'
