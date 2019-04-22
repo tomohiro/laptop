@@ -29,8 +29,7 @@ homebrew_cask_packages:
   # Editor/IDE
   - atom
   - visual-studio-code
-  - phpstorm
-  - android-studio
+  - jetbrains-toolbox
 
   # Database
   - mysqlworkbench
@@ -40,11 +39,14 @@ homebrew_cask_packages:
   - qlvideo
   - qlmarkdown
 
-  # macOS
-  - aerial
-  - font-fontawesome
-  - font-menlo-for-powerline
-  - font-noto-sans-cjk-jp
-  - font-roboto
+  # macOS - Utility
+  - authy
   - spectacle
   - bitbar
+
+  # macOS - Fonts
+  - aerial
+  - font-fontawesome
+  - font-roboto
+  - font-noto-sans-cjk-jp
+  - font-menlo-for-powerline
