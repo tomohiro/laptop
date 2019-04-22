@@ -1,5 +1,11 @@
 homebrew_taps:
-  - thoughtbot/formulae
+  # Official
   - homebrew/services
   - homebrew/cask-fonts
   - homebrew/cask-versions
+
+  # 3rd Party
+  - thoughtbot/formulae
+  - nodenv/nodenv/
+  - ouchxp/nodenv
+  - jawshooah/pyenv

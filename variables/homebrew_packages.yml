@@ -51,7 +51,7 @@ homebrew_packages:
   - git
   - git-lfs
   - ghq
-  - gitsh
+  - gitsh # Tap: thoughtbot/formulae
   - tig
   - hub
 
@@ -86,11 +86,12 @@ homebrew_packages:
   # Node.js
   - nodenv
   - node-build
-  - nodenv/nodenv/nodenv-default-packages
+  - nodenv-default-packages # Tap: nodenv/nodenv
+  - nodenv-nvmrc            # Tap: ouchxp/nodenv
 
   # Python
   - pyenv
-  - jawshooah/pyenv/pyenv-default-packages
+  - pyenv-default-packages # Tap: jawshooah/pyenv
 
   # Go
   - go
