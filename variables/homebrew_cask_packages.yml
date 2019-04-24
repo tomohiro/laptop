@@ -9,6 +9,7 @@ homebrew_cask_packages:
   - discord
 
   # Media
+  - spotify
   - vlc
   - bowtie
 
