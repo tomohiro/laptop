@@ -1,6 +1,10 @@
 # vim: ft=yaml
 ---
 resources:
+  # Prepare VAGRANT_HOME directory
+  - type: directory
+    path: <%= ENV['HOME'] %>/.local/share/vagrant
+
   # Change VirtualBox VM default location
   - type: command
     check_script: "VBoxManage list systemproperties | grep '<%= ENV['HOME'] %>/Library/VirtualBox VMs'"
@@ -11,3 +15,8 @@ resources:
   - type: vagrant_plugin
     name: <%= name %>
   <%- end -%>
+
+  # Set system user Vagrantfile
+  - type: template
+    destination: <%= ENV['HOME'] %>/.local/share/vagrant/Vagrantfile
+    source: templates/vagrant.d/Vagrantfile

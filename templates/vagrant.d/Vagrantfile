@@ -1,0 +1,13 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+# frozen_string_literal: true
+
+# This Vagrantfile including defaults configuration
+#
+# Load Order and Merging | Vagrantfile - Vagrant by HashiCorp
+# https://www.vagrantup.com/docs/vagrantfile/#load-order-and-merging
+Vagrant.configure(2) do |config|
+  if Vagrant.has_plugin?('vagrant-vbguest')
+    config.vbguest.auto_update = false
+  end
+end
