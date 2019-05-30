@@ -44,10 +44,11 @@ homebrew_cask_packages:
   - authy
   - spectacle
   - bitbar
+  - aerial
 
   # macOS - Fonts
-  - aerial
   - font-fontawesome
   - font-roboto
   - font-noto-sans-cjk-jp
   - font-menlo-for-powerline
+    font-meslo-nerd-font
