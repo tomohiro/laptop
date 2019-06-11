@@ -20,6 +20,7 @@ homebrew_cask_packages:
   - docker
   - google-cloud-sdk
   - ngrok
+  - wireshark
 
   # Development
   - dash
