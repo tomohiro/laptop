@@ -26,9 +26,25 @@ resources:
   <%- end -%>
 
   # Homebrew Cask packages
-  <%- homebrew_cask_packages.each do |package| -%>
+  <%- homebrew_cask_packages_common.each do |package| -%>
   - type: homebrew_cask_package
     name: <%= package %>
+  <%- end -%>
+
+  # Install macOS apps for personal
+  <%- if ENV['MACOS_ENV'] == 'personal' -%>
+  <%- homebrew_cask_packages_personal.each do |package| -%>
+  - type: homebrew_cask_package
+    name: <%= package %>
+  <%- end -%>
+  <%- end -%>
+
+  # Install macOS apps for work
+  <%- if ENV['MACOS_ENV'] == 'work' -%>
+  <%- homebrew_cask_packages_work.each do |package| -%>
+  - type: homebrew_cask_package
+    name: <%= package %>
+  <%- end -%>
   <%- end -%>
 
   # Cleanup packages
