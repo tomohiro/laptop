@@ -12,7 +12,7 @@ resources:
   <%- end -%>
 
   # Install mac apps for work
-  <%- if ENV['MAC_ENV'] == 'work' -%>
+  <%- if ENV['MACOS_ENV'] == 'work' -%>
   <%- work_mac_apps.each do |app| -%>
   - type: command
     script: mas lucky <%= app %>
@@ -20,7 +20,7 @@ resources:
   <%- end -%>
 
   # Install mac apps for personal
-  <%- if ENV['MAC_ENV'] == 'personal' -%>
+  <%- if ENV['MACOS_ENV'] == 'personal' -%>
   <%- personal_mac_apps.each do |app| -%>
   - type: command
     script: mas lucky <%= app %>
