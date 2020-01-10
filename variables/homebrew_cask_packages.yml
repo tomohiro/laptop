@@ -1,17 +1,13 @@
-homebrew_cask_packages:
+homebrew_cask_packages_common:
   # Browser
   - google-chrome
-  - google-chrome-canary
-  - firefox
 
   # Messaging
   - skype
   - discord
 
   # Media
-  - spotify
   - vlc
-  - bowtie
 
   # Ops Tools
   - hyper
@@ -20,22 +16,15 @@ homebrew_cask_packages:
   - docker
   - google-cloud-sdk
   - ngrok
-  - wireshark
 
   # Development
   - dash
   - java
-  - boostnote
   - postman
 
   # Editor/IDE
   - atom
   - visual-studio-code
-  - jetbrains-toolbox
-
-  # Database
-  - mysqlworkbench
-  - psequel
 
   # QuickLook plugins
   - qlvideo
@@ -43,7 +32,6 @@ homebrew_cask_packages:
 
   # macOS - Utility
   - authy
-  - spectacle
   - bitbar
   - aerial
 
@@ -53,3 +41,23 @@ homebrew_cask_packages:
   - font-noto-sans-cjk-jp
   - font-menlo-for-powerline
     font-meslo-nerd-font
+
+homebrew_cask_packages_personal:
+  # Media
+  - spotify
+  - bowtie
+
+homebrew_cask_packages_work:
+  # Browser
+  - google-chrome-canary
+  - firefox
+
+  # Ops Tools
+  - wireshark
+
+  # Editor/IDE
+  - jetbrains-toolbox
+
+  # Database
+  - mysqlworkbench
+  - psequel

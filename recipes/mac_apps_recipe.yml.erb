@@ -5,23 +5,23 @@ resources:
   - type: command
     script: mas upgrade
 
-  # Install common mac apps
-  <%- mac_apps.each do |app| -%>
+  # Install common macOS apps
+  <%- mac_apps_common.each do |app| -%>
   - type: command
     script: mas lucky <%= app %>
   <%- end -%>
 
-  # Install mac apps for work
-  <%- if ENV['MAC_ENV'] == 'work' -%>
-  <%- work_mac_apps.each do |app| -%>
+  # Install macOS apps for personal
+  <%- if ENV['MACOS_ENV'] == 'personal' -%>
+  <%- mac_apps_personal.each do |app| -%>
   - type: command
     script: mas lucky <%= app %>
   <%- end -%>
   <%- end -%>
 
-  # Install mac apps for personal
-  <%- if ENV['MAC_ENV'] == 'personal' -%>
-  <%- personal_mac_apps.each do |app| -%>
+  # Install macOS apps for work
+  <%- if ENV['MACOS_ENV'] == 'work' -%>
+  <%- mac_apps_work.each do |app| -%>
   - type: command
     script: mas lucky <%= app %>
   <%- end -%>

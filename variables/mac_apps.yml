@@ -1,6 +1,12 @@
-mac_apps:
+mac_apps_common:
   - Xcode
   - Dashlane
   - Slack
-  - Kindle
   - Unarchiver
+
+mac_apps_personal:
+  - Kindle
+
+mac_apps_work:
+  - Monosnap
+  - Microsoft Remote Desktop 10
