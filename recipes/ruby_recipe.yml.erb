@@ -16,7 +16,7 @@
 resources:
   # rbenv-default-gems
   - type: template
-    destination: <%= %x[rbenv root].strip %>/default-gems
+    destination:  <%= ENV['HOME'] %>/.local/share/rbenv/default-gems
     source: templates/default-rubygems.erb
 
   - type: rbenv_ruby
