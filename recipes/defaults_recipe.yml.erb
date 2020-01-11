@@ -10,8 +10,8 @@
 # - ~/Library/Preferences/
 ---
 resources:
-  # Set Language
-  - id: set_language
+  # System: Set Language
+  - id: system_language_set_english
     type: defaults
     domain: NSGlobalDomain
     key: AppleLanguages
@@ -19,8 +19,22 @@ resources:
       - "en-JP"
       - "ja-JP"
 
-  # Wipe all (default) app icons from the Dock
-  - id: wipe_all_app_iconrs_from_dock
+  # System: Always show scrollbars
+  # - id: system_scrolbars_always_show
+    # type: defaults
+    # domain: NSGlobalDomain
+    # key: AppleShowScrollBars
+    # value: WhenScrolling # `WhenScrolling`, `Automatic` and `Always`
+
+  # System: Disable Resume system-wide
+  - id: system_reboot_disabe_resume_application
+    type: defaults
+    domain: com.apple.systempreferences
+    key: NSQuitAlwaysKeepsWindows
+    value: 0
+
+  # Dock: Wipe all (default) app icons from the Dock
+  - id: dock_wipe_all_app_icons
     type: defaults
     domain: com.apple.dock
     key: persistent-apps
@@ -28,8 +42,8 @@ resources:
     notify:
       - restart_dock
 
-  # Automatically hide the Dock
-  - id: autohide_dock
+  # Dock: Automatically hide the Dock
+  - id: dock_autohide
     type: defaults
     domain: com.apple.dock
     key: autohide
@@ -37,33 +51,15 @@ resources:
     notify:
       - restart_dock
 
-  # Don’t automatically rearrange Spaces based on most recent use
-  - id: stop_auto_rearrange_spaces
+  # Don't automatically rearrange Spaces based on most recent use
+  - id: spaces_stop_auto_rearrange
     type: defaults
     domain: com.apple.dock
     key: mru-spaces
     value: 0
 
-  # Avoid creating .DS_Store files on network
-  - id: disable_create_ds_store_files_on_network
-    type: defaults
-    domain: com.apple.desktopservices
-    key: DSDontWriteNetworkStores
-    value: 'true'
-    notify:
-      - restart_finder
-
-  # Avoid creating .DS_Store files on usb
-  - id: disable_create_ds_store_files_on_usb
-    type: defaults
-    domain: com.apple.desktopservices
-    key: DSDontWriteUSBStores
-    value: 'true'
-    notify:
-      - restart_finder
-
   # Auto-play videos when opened with QuickTime Player
-  - id: autoplay_quicktime_player
+  - id: quicktime_autoplay_video
     type: defaults
     domain: com.apple.QuickTimePlayerX
     key: MGPlayMovieOnOpen
@@ -76,8 +72,107 @@ resources:
     key: RichText
     value: 0
 
-  # Set the Default shell to Zsh
-  - type: command
+  # Finder: Set HOME as the default location for new Finder windows (1)
+  # - id: finder_new_window_target_desktop_first
+    # type: defaults
+    # domain: com.apple.finder
+    # key: NewWindowTarget
+    # value: PfDe
+    # notify:
+      # - restart_finder
+
+  # # Finder: Set HOME as the default location for new Finder windows (2)
+  # - id: finder_new_window_target_desktop_second
+    # type: defaults
+    # domain: com.apple.finder
+    # key: NewWindowTargetPath
+    # value: file://<%= ENV['HOME'] %>/Desktop/
+    # notify:
+      # - restart_finder
+
+  # Finder: Don't show hidden files by default
+  - id: finder_hide_fidden_files
+    type: defaults
+    domain: com.apple.finder
+    key: AppleShowAllFiles
+    value: 0
+    notify:
+      - restart_finder
+
+  # Finder: Show all filename extensions
+  - id: finder_show_all_filename_extensions
+    type: defaults
+    domain: NSGlobalDomain
+    key: AppleShowAllExtensions
+    value: 1
+    notify:
+      - restart_finder
+
+  # Finder: Keep folders on top when sorting by name
+  - id: finder_sort_by_folders_and_name
+    type: defaults
+    domain: com.apple.finder
+    key: _FXSortFoldersFirst
+    value: 1
+    notify:
+      - restart_finder
+
+  # Finder: Set sidebar icon size to small
+  - id: finder_siderbar_icon_size_small
+    type: defaults
+    domain: NSGlobalDomain
+    key: NSTableViewDefaultSizeMode
+    value: 1
+    notify:
+      - restart_finder
+
+  # Finder: Show status bar
+  - id: finder_show_status_bar
+    type: defaults
+    domain: com.apple.finder
+    key: ShowStatusBar
+    value: 1
+    notify:
+      - restart_finder
+
+  # Finder: Show path bar
+  - id: finder_show_path_bar
+    type: defaults
+    domain: com.apple.finder
+    key: ShowPathbar
+    value: 1
+    notify:
+      - restart_finder
+
+  # Finder: Avoid creating .DS_Store files on network
+  - id: finder_disable_create_ds_store_files_on_network
+    type: defaults
+    domain: com.apple.desktopservices
+    key: DSDontWriteNetworkStores
+    value: 1
+    notify:
+      - restart_finder
+
+  # Finder: Avoid creating .DS_Store files on usb
+  - id: finder_disable_create_ds_store_files_on_usb
+    type: defaults
+    domain: com.apple.desktopservices
+    key: DSDontWriteUSBStores
+    value: 1
+    notify:
+      - restart_finder
+
+  # Finder: Show the ~/Library folder
+  - id: finder_show_library_folder
+    type: command
+    check_script: ls -ldO ~/Library/ | grep -v hidden
+    script: chflags nohidden ~/Library
+    notify:
+      - restart_finder
+
+  # Shell: Set the Default shell to Zsh
+  - id: shell_default_set_zsh
+    type: command
     check_script: finger -l | grep '/usr/local/bin/zsh'
     script: sudo chsh -s $(which zsh) $(whoami)
 
