@@ -40,7 +40,7 @@ homebrew_cask_packages_common:
   - font-roboto
   - font-noto-sans-cjk-jp
   - font-menlo-for-powerline
-    font-meslo-nerd-font
+  - font-meslo-nerd-font
 
 homebrew_cask_packages_personal:
   # Media
