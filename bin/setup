@@ -3,7 +3,8 @@
 set -e
 
 prepare() {
-  bundle install --path vendor/bundle
+  bundle config --local set path 'vendor/bundle'
+  bundle install
 }
 
 # If $GOPATH is empty, Go installs packages to $HOME/go.
