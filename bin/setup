@@ -9,29 +9,29 @@ prepare() {
 
 # If $GOPATH is empty, Go installs packages to $HOME/go.
 set_gopath() {
-  export GOPATH=${HOME}/.local
+  export GOPATH="${HOME}/.local"
 }
 
 # Set XDG Base Directory
 #   - https://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
 set_xdg_path() {
-  export XDG_DATA_HOME=$HOME/.local/share
-  export XDG_CONFIG_HOME=$HOME/.config
-  export XDG_CACHE_HOME=$HOME/.cache
+  export XDG_DATA_HOME="${HOME}/.local/share"
+  export XDG_CONFIG_HOME="${HOME}/.config"
+  export XDG_CACHE_HOME="${HOME}/.cache"
 }
 
 # Set rbenv, pyenv, nodenv directory based on XDG
 set_lang_path() {
-  export RBENV_ROOT=$XDG_DATA_HOME/rbenv
-  export PYENV_ROOT=$XDG_DATA_HOME/pyenv
-  export NODENV_ROOT=$XDG_DATA_HOME/nodenv
+  export RBENV_ROOT="${XDG_DATA_HOME}/rbenv"
+  export PYENV_ROOT="${XDG_DATA_HOME}/pyenv"
+  export NODENV_ROOT="${XDG_DATA_HOME}/nodenv"
 }
 
 serverkit() {
   local command=$1
   local recipe=$2
 
-  bundle exec serverkit $command "$recipe" \
+  bundle exec serverkit ${command} ${recipe} \
     --variables=variables \
     --log-level=DEBUG
 }
