@@ -7,7 +7,7 @@ homebrew_cask_packages_common:
   - discord
 
   # Media
-  - vlc
+  - iina
 
   # Ops Tools
   - hyper
