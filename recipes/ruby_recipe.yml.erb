@@ -20,11 +20,15 @@ resources:
     source: templates/default-rubygems.erb
 
   - type: rbenv_ruby
-    version: 2.6.3
+    version: 2.6.5
+    global: false
+
+  - type: rbenv_ruby
+    version: 2.7.0
     global: true
 
   # RubyGems
   - type: command
-    script: gem update -f
+    script: gem update --system
   - type: command
     script: gem cleanup
