@@ -39,12 +39,13 @@ homebrew_packages:
   - p7zip
 
   # Network & Internet
-  - w3m
-  - wget
+  - wakeonlan
   - ifstat
-  - dnsmasq
   - httpstat
   - httpie
+  - wget
+  - w3m
+  - dnsmasq
 
   # VCS
   - mercurial
@@ -74,6 +75,7 @@ homebrew_packages:
   - youtube-dl
   - ffmpeg
   - opencv
+  - exiftool
 
   # Swift
   - cocoapods

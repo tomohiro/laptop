@@ -58,6 +58,9 @@ homebrew_cask_packages_work:
   # Editor/IDE
   - jetbrains-toolbox
 
+  # Design
+  - adobe-creative-cloud
+
   # Database
   - mysqlworkbench
   - psequel
