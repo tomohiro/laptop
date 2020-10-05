@@ -105,6 +105,7 @@ homebrew_packages:
   - readline
   - libxml2
   - libxslt
+  - wkhtmltopdf
 
 homebrew_packages_with_options:
   - name: yarn

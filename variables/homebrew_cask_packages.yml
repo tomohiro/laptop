@@ -48,19 +48,8 @@ homebrew_cask_packages_personal:
   - bowtie
 
 homebrew_cask_packages_work:
-  # Browser
-  - google-chrome-canary
-  - firefox
-
-  # Ops Tools
-  - wireshark
-
   # Editor/IDE
   - jetbrains-toolbox
 
-  # Design
-  - adobe-creative-cloud
-
   # Database
   - mysqlworkbench
-  - psequel
