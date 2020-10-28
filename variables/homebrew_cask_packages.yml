@@ -2,9 +2,10 @@ homebrew_cask_packages_common:
   # Browser
   - google-chrome
 
-  # Messaging
+  # Messaging / Meeting
   - skype
   - discord
+  - zoomus
 
   # Media
   - iina

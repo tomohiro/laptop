@@ -48,6 +48,7 @@ homebrew_packages:
   - dnsmasq
 
   # VCS
+  - svn # Required for `font-roboto`
   - mercurial
   - git
   - git-lfs
@@ -55,6 +56,7 @@ homebrew_packages:
   - gitsh # Tap: thoughtbot/formulae
   - tig
   - hub
+  - gh
 
   # Infrastructure
   - assh

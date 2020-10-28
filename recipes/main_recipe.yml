@@ -7,9 +7,6 @@ resources:
     path: recipes/atom_recipe.yml.erb
 
   - type: recipe
-    path: recipes/dnsmasq_recipe.yml.erb
-
-  - type: recipe
     path: recipes/go_recipe.yml.erb
 
   - type: recipe
